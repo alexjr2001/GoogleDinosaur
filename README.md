@@ -5,12 +5,14 @@ An imitation project of the google game known for internet connection problem. I
 <img width="343" alt="image" src="https://github.com/alexjr2001/GoogleDinosaur/assets/63054183/1f880a60-0829-447e-ad7f-42641480b89a">
 </p>
 
-All you have to do to play is download the only attached file in this repo, compile and run it. As the following steps, if you're using a terminal:
+All you have to do to play is download the only attached file in this repo, compile and run it. As the following steps (in case you are using a terminal).
 
+- Compilation step:
 ```
 >> g++ Dinosaur.cpp -o a.exe
 ```
 
+- Running step:
 ```
 >> ./a.exe
 ```
