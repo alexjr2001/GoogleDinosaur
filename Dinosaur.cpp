@@ -49,7 +49,7 @@ public:
         cout << "constructor";
     }
     void imprimeScore() {               //Score in the last try
-        cout << "\nSCORE: " << score;
+        cout << "\n\nSCORE: " << score;
     }
     void imprimeTablero() {                 //We print the field
         cout << "\n" << dino1 << "\n";
@@ -59,7 +59,6 @@ public:
             }
             cout << tabla[i];
         }
-        cout << "\n" <<dobleSalto << "\n";
         imprimeScore();
         dobleSalto += 1;
         return;
@@ -117,7 +116,6 @@ public:
         if (noChoca == true) system("cls");         //When it collides
         if (_kbhit()) {
             tecla = _getch();
-            //apreto = false;
             if (tecla == KEY_UP) {          //Jumps
                 std::cout << "\n" << dino1;
                 if (tabla[2] == obstaculo) {        //For jump 100 points
@@ -137,11 +135,6 @@ public:
             dobleSalto = 0;
         }
 
-        //if (apreto) {
-        //    cout << "\nboton 0:" << botones[0];
-        //    cout << "\nboton 1:" << botones[1];
-        //    cout << "\nboton 2: " << botones[2];
-        //}
         return;
     }
     int velocidad(int _score) {     //Speed of the game, as time goes and score increases. We speed up
@@ -155,7 +148,6 @@ public:
         cout << "\n\tGAME OVER\n\nQuieres jugar de nuevo? Si(1) o No(0): ";     
         cin >> noChoca;
         if (noChoca) {
-            //tablerinho();
             for (int i = 3; i < 10; i++) {
                 tabla[i] = piso;
             }
@@ -219,9 +211,7 @@ void tablero(){
         if (tabla[7] == piso && tabla[8] == piso && random == 0) {
             tabla[9] = obstaculo;
         }
-        //if (apreto==false && tabla[2] == obstaculo) { //Termina el juego
-        //    noChoca = false;
-        //}
+	    
         for (int i = 0; i < 9; i++) {
             if (i == 2){
                 if (tabla[i + 1] != piso) {
