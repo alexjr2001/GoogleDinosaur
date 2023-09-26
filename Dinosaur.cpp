@@ -46,7 +46,6 @@ public:
             tabla[i] = piso;
         }
         tabla[2] = dino2;
-        cout << "constructor";
     }
     void imprimeScore() {               //Score in the last try
         cout << "\n\nSCORE: " << score;
